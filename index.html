@@ -1,354 +1,558 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Guilherme Vilela Moreira</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f0e17cbf2f.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        p {
-            font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
+      p {
+        font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
 
-        .foto-perfil {
-            max-width: auto;
-            border-radius: 50%;
-        }
+      .foto-perfil {
+        max-width: auto;
+        border-radius: 50%;
+      }
 
-        .icones {
-            padding-left: 5px;
-        }
+      .icones {
+        padding-left: 5px;
+      }
 
-        .titulosBrancos {
-            text-decoration: underline;
-            text-underline-position: under;
-            padding-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: white;
-        }
+      .titulosBrancos {
+        text-decoration: underline;
+        text-underline-position: under;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+      }
 
-        .titulosVerdes {
-            text-decoration: underline;
-            text-underline-position: under;
-            padding-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: #18bc9c
-        }
+      .titulosVerdes {
+        text-decoration: underline;
+        text-underline-position: under;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #18bc9c;
+      }
 
-        .paragrafoBrancos {
-            color: white !important;
-        }
+      .paragrafoBrancos {
+        color: white !important;
+      }
 
+      .jumbotron {
+        margin-bottom: 0px;
+      }
 
-        .jumbotron {
-            margin-bottom: 0px;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        html {
-            scroll-behavior: smooth;
-        }
+      p {
+        color: black !important;
+      }
 
-        p {
-            color: black !important;
-        }
+      .corPrimaria {
+        background-color: #18bc9c;
+      }
 
-        .corPrimaria {
-            background-color: #18bc9c;
-        }
-
-        .itemMenu {
-            color: white;
-        }
+      .itemMenu {
+        color: white;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color:#2c3e50">
-        <a class="navbar-brand" href="#" style=color:white>Guilherme Vilela Moreira</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-light"
+      style="background-color: #2c3e50;"
+    >
+      <a class="navbar-brand" href="#" style="color: white;"
+        >Guilherme Vilela Moreira</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExample04"
+        aria-controls="navbarsExample04"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-            <ul class="navbar-nav">
-                <li>
-                    <a href="#projetosAcademicos" class="nav-link" style=color:white>Projetos Academicos</a>
-                </li>
-                <li>
-                    <a href="#projetosProfissionais" class="nav-link" style=color:white>Projetos Profissionais</a>
-                </li>
-                <li>
-                    <a href="#sobre-mim" class="nav-link" style=color:white>Sobre mim</a>
-                </li>
-                <li>
-                    <a href="#depoimentos" class="nav-link" style=color:white>Depoimentos</a>
-                </li>
-                <li>
-                    <a href="#contato" class="nav-link" style=color:white>Contato</a>
-                </li>
-            </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#projetosAcademicos" class="nav-link" style="color: white;"
+              >Academic Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projetosProfissionais"
+              class="nav-link"
+              style="color: white;"
+              >Professional Projects</a
+            >
+          </li>
+          <li>
+            <a href="#sobre-mim" class="nav-link" style="color: white;"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a href="#depoimentos" class="nav-link" style="color: white;"
+              >Depositions</a
+            >
+          </li>
+          <li>
+            <a href="#contato" class="nav-link" style="color: white;"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <section class="jumbotron text-center corPrimaria">
-        <div class="container">
-            <img src="https://i.ibb.co/8rxRMph/NQKC1188.jpg" class="foto-perfil" alt="Responsive image">
-            <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Guilherme Vilela Moreira</h1>
-            <p class="lead" style="color:white !important;">Junior Developer Analyst in TATA Consultancy Services
-            </p>
-            <p>
-                <a href="#contato" class="btn btn-dark my-2">Contato</a>
-            </p>
-            <a href="https://github.com/Vilela272"><i style="color:white" class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/guilherme-vilela-moreira-81426b150/"><i style="color:white" class="fab fa-linkedin"></i></a>
-        </div>
+      <div class="container">
+        <img
+          src="https://i.ibb.co/8rxRMph/NQKC1188.jpg"
+          class="foto-perfil"
+          alt="Responsive image"
+        />
+        <h1
+          class="jumbotron-heading"
+          style="color: white; text-transform: uppercase;"
+        >
+          Guilherme Vilela Moreira
+        </h1>
+        <p class="lead" style="color: white !important;">
+          Junior Developer Analyst in Tata Consultancy Services
+        </p>
+        <p>
+          <a href="#contato" class="btn btn-dark my-2">Contato</a>
+        </p>
+        <a href="https://github.com/Vilela272"
+          ><i style="color: white;" class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/guilherme-vilela-moreira-81426b150/"
+          ><i style="color: white;" class="fab fa-linkedin"></i
+        ></a>
+      </div>
     </section>
     <!-- Projects -->
-    <div class="album py-5 bg-light " id="projetosAcademicos">
-        <div class="container">
-            <h2 class="text-center jumbotron-heading titulosVerdes">Projetos Acadêmicos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://i.ibb.co/nzPSS0T/1080734.jpg" 
-                            data-holder-rendered="true"
-                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
-                        <div class="card-body">
-                            <p align="justify" class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias PHP e MySQL.
-                                A proposta do projeto foi desenvolver um sistema web, utilizando as boas práticas e os conceitos 
-                                estudados em aula, aplicando os conteúdos da disciplina de Desenvolvimento de Software.
-                            </p>
-                            <ul>
-                                <li><h5>Linguagens Utilizadas:</h5></li>
-                                <li>PHP</li>
-                                <li>MYSQL</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <button type="button" class="btn btn-sm btn-outline-primary"><a href="https://github.com/Vilela272/projetoCinema">Ver Código</a></button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
+    <div class="album py-5 bg-light" id="projetosAcademicos">
+      <div class="container">
+        <h2 class="text-center jumbotron-heading titulosVerdes">
+          Academic Projects
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="https://i.ibb.co/nzPSS0T/1080734.jpg"
+                data-holder-rendered="true"
+                style="
+                  height: 225px;
+                  width: 100%;
+                  max-width: 100%;
+                  display: block;
+                "
+              />
+              <div class="card-body">
+                <p align="justify" class="card-text">
+                  This is a project that I developed using PHP and MySQL
+                  technologies. The project proposal was to develop a web
+                  system, using good practices and concepts studied in class,
+                  applying the contents of the discipline of Software
+                  Development.
+                </p>
+                <ul>
+                  <li><h5>Languages Used:</h5></li>
+                  <li>PHP</li>
+                  <li>MYSQL</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-success"
+                    >
+                      Ver Projeto
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      <a href="https://github.com/Vilela272/projetoCinema"
+                        >Ver Código</a
+                      >
+                    </button>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://i.ibb.co/sR5PjNB/k4XqFTv.png" 
-                            data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <p align="justify" class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias C# e MySQL.
-                                A proposta do projeto foi desenvolver uma criptografia utilizando as boas práticas e os conceitos 
-                                estudados em aula, aplicando os conteúdos da disciplina de Desenvolvimento de Software.
-                            </p>
-                            <ul>
-                                <li><h5>Linguagens Utilizadas:</h5></li>
-                                <li>C#</li>
-                                <li>MYSQL</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <button type="button" class="btn btn-sm btn-outline-primary"><a href="https://github.com/Vilela272/apsDesenvolvimentoCSharp">Ver Código</a></button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://i.ibb.co/Trv0cn2/download.jpg" 
-                            data-holder-rendered="true"
-                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
-                        <div class="card-body">
-                            <p align="justify" class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias HTML e CSS.
-                                A proposta do projeto foi desenvolver um site utilizando o desenvolvimento sustentável, 
-                                aplicando nele os conteúdos em aulas da disciplina de Desenvolvimento e Ambiente Web e alertar
-                                sobre o impacta no meio ambiente e na saúde humanda, causados pelo descarte de pneus e como
-                                fazer o reuso do mesmo para asfalto.
-                                O tema do projeto foi escolhido com base nos 17 objetivos de desenvolvimento sustentável da ONU 
-                                (Organização das Nações Unidas), onde fizemos um estudo para apresentar nossa análise do asfalto borracha,
-                                 como uma boa forma de reutilização e solução para destinação dos pneus descartados, por aplicar a borracha 
-                                 de pneus em sua produção, e resolver a questão de capeamento de vias e ruas.
-                            </p>
-                            <ul>
-                                <li><h5>Linguagens Utilizadas:</h5></li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <button type="button" class="btn btn-sm btn-outline-primary"><a href="https://github.com/Vilela272/apsDesenvolvimentoWeb">Ver Código</a></button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+              </div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="https://i.ibb.co/sR5PjNB/k4XqFTv.png"
+                data-holder-rendered="true"
+                style="height: 225px; width: 100%; display: block;"
+              />
+              <div class="card-body">
+                <p align="justify" class="card-text">
+                  This is a project that I developed using C # and MySQL
+                  technologies. The project's proposal was to develop a
+                  cryptography using good practices and concepts studied in
+                  class, applying the contents of the discipline of Software
+                  Development.
+                </p>
+                <ul>
+                  <li><h5>Languages Used:</h5></li>
+                  <li>C#</li>
+                  <li>MYSQL</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-success"
+                    >
+                      View Project
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      <a
+                        href="https://github.com/Vilela272/apsDesenvolvimentoCSharp"
+                        >View Code</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="https://i.ibb.co/Trv0cn2/download.jpg"
+                data-holder-rendered="true"
+                style="
+                  height: 225px;
+                  width: 100%;
+                  max-width: 100%;
+                  display: block;
+                "
+              />
+              <div class="card-body">
+                <p align="justify" class="card-text">
+                  This is a project that I developed using HTML and CSS
+                  technologies.                                 The project's
+                  proposal was to develop a website using sustainable
+                  development,                                 applying the
+                  content in classes of the discipline of Development and Web
+                  Environment and alert                                 about
+                  the impact on the environment and human health, caused by the
+                  disposal of tires and how
+                                                  reuse it for asphalt.
+                                                  The project theme was chosen
+                  based on the 17 UN sustainable development goals
+                                                  (United Nations Organization),
+                  where we did a study to present our analysis of rubber
+                  asphalt,                                  as a good form of
+                  reuse and solution for disposal of discarded tires, by
+                  applying the rubber                                  of tires
+                  in its production, and solve the issue of capping roads and
+                  streets.
+                </p>
+                <ul>
+                  <li><h5>Languages Used:</h5></li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-success"
+                    >
+                      View Project
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      <a
+                        href="https://github.com/Vilela272/apsDesenvolvimentoWeb"
+                        >View Code</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Projects -->
-    <div class="album py-5 bg-light " id="projetosProfissionais">
-        <div class="container">
-            <h2 class="text-center jumbotron-heading titulosVerdes">Projetos Profissionais</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://i.ibb.co/L1dj86V/logo-oi.jpg" 
-                            data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <p align="justify" class="card-text">Projeto profissional atuando em Análise de Sistemas.
-                                Tive o enorme prazer de participar de um projeto grandioso da Oi Telemar junto com a Voxage, 
-                                onde tive as atribuições e responsabilidades de analisar e manter o sistemas de comunicação da Oi Telemar 
-                                com seus clientes, entre as ferramentes que utilizamos para o andamento do projeto foram o SSMS - SQL Server
-                                 Management Studio, para fazer a análise de discagens de uma média de 30 milhões por dia, extrações de 
-                                 relatórios, para análise e visualização, e manutenção preventiva em servidores. Utilizamos também no 
-                                 andamento do projeto metodologias ágeis como Scrum, e também pude preparar automatizações utilizando Python
-                                  com sua bibliotecas (NumPy, Pandas, Plotly, SQLAlchemy e Matplotlib) e Java através do Selenium.
-                            </p>
-                            <ul>
-                                <li><h5>Linguagens Utilizadas:</h5></li>
-                                <li>SQL Server</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
+    <div class="album py-5 bg-light" id="projetosProfissionais">
+      <div class="container">
+        <h2 class="text-center jumbotron-heading titulosVerdes">
+          Professional Projects
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="https://i.ibb.co/L1dj86V/logo-oi.jpg"
+                data-holder-rendered="true"
+                style="height: 225px; width: 100%; display: block;"
+              />
+              <div class="card-body">
+                <p align="justify" class="card-text">
+                  Professional project working in Systems Analysis. Experience
+                  the great pleasure of participating in a grand project of Oi
+                  Telemar together with Voxage, where the duties and
+                  responsibilities of analyzing and maintaining Oi Telemar's
+                  communication systems with their customers, among the tools
+                  they use to progress the project were SSMS - SQL Server
+                  Management Studio, to analyze an average of 30 million per
+                  day, extractions from reports, for analysis and responses, and
+                  preventive maintenance on servers. We also use project
+                  progress agile methodologies like Scrum, and also prepare
+                  automations using Python with its libraries (NumPy, Pandas,
+                  Plotly, SQLAlchemy and Matplotlib) and Java through Selenium.
+                </p>
+                <ul>
+                  <li><h5>Languages Used:</h5></li>
+                  <li>SQL Server</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-success"
+                    >
+                      View Project
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      View Code
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
                 </div>
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://i.ibb.co/hgd22dx/php-mysql-wallpaper-by-milesandryprower-d9o6yat-fullview.jpg" 
-                            data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <p align="justify" class="card-text">Projeto profissional atuando em Desenvolvimento PHP e Suporte Técnico.
-                                Tive a oportunidade de trabalhar como estagiário em suporte técnico, onde tive um grande crescimento pessoal e profissional.
-                                Entre o meu crescimento profissional, pude adquirir experiência e competência em manutenção e montagem de desktop e notebook, 
-                                auxílio e atribuição em licitações governamentais e corporativas.
-                                Porém o meu maior avançado e desenvolvimento pessoal e profissional foi na parte de desenvolvimento, onde pude realizar a sustentação, 
-                                correção de bugs e criação de novas funcionalidades ao sistemas (Crud) utilizando a linguagem PHP.
-                            </p>
-                            <ul>
-                                <li><h5>Linguagens Utilizadas:</h5></li>
-                                <li>PHP</li>
-                                <li>MYSQL</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="https://i.ibb.co/hgd22dx/php-mysql-wallpaper-by-milesandryprower-d9o6yat-fullview.jpg"
+                data-holder-rendered="true"
+                style="height: 225px; width: 100%; display: block;"
+              />
+              <div class="card-body">
+                <p align="justify" class="card-text">
+                  Professional project working in PHP Development and Technical
+                  Support. I had the opportunity to work as an intern in
+                  technical support, where I had a great personal and
+                  professional growth. Among my professional growth, I was able
+                  to acquire experience and competence in maintenance and
+                  assembly of desktop and notebook, assistance and attribution
+                  in government and corporate bids. However, my biggest advance
+                  and personal and professional development was in the
+                  development part, where I was able to carry out the support,
+                  bug fixing and creating new system functionalities (Crud)
+                  using the PHP language.
+                </p>
+                <ul>
+                  <li><h5>Languages Used:</h5></li>
+                  <li>PHP</li>
+                  <li>MYSQL</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-success"
+                    >
+                      View Project
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      View Code
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <section class="jumbotron text-center corPrimaria" id="sobre-mim">
-        <div class="container">
-            <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-            <p align="justify" class="lead paragrafoBrancos">Olá meu nome é Guilherme Vilela Moreira e estou no mercado de Ti a mais 
-                de 2 anos, tendo desenvolvido projetos com Empresas como Voxage, Compuset e Atualmente com a TATA Consultancy Services. 
-                Atualmente graduando em Sistemas de Informação pela Faculdade Impacta de Tecnologia e realizando Formação Java e JavaEE através 
-                da plataforma da Alura Cursos Online e Udemy. Sou apaixonado por tecnologias e desenvolvimento, e gosto de compartilhar 
-                meu conhecimento sempre que possível com meus colegas de trabalho, faculdade e conhecidos.
-            </p>
-        </div>
+      <div class="container">
+        <h2 class="jumbotron-heading titulosBrancos">About me</h2>
+        <p align="justify" class="lead paragrafoBrancos">
+          Hello my name is Guilherme Vilela Moreira and I'm in the market for
+          You the most 2 years, having developed projects with Companies such as
+          Voxage, Compuset and Currently with TATA Consultancy Services.
+          Currently graduating in Information Systems from Faculdade Impacta de
+          Tecnologia and conducting Java and JavaEE Training through Alura
+          Cursos Online and Udemy platform. I am passionate about technology and
+          development, and I like to share my knowledge whenever possible with
+          my co-workers, faculty and acquaintances.
+        </p>
+      </div>
     </section>
 
     <section Id="depoimentos">
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center jumbotron-heading titulosVerdes">Depoimentos</h2>
-                <blockquote class="blockquote text-center">
-                    <p align="justify" class="mb-0">O Guilherme é um profissional muito talentoso, tive o privilégio em trabalhar com ele na Compuset, 
-                        sempre disposto e respeitoso. Possui muito conhecimento em programação e suporte em web, com certeza um profissional 
-                        que tende a somar, aqui vai minha recomendação.</p>
-                    <footer class="blockquote-footer">Anlista de Suporte Pleno<cite title="Source Title"> Compuset</cite>
-                    </footer>
-                </blockquote>
-                <blockquote class="blockquote text-center">
-                    <p align="justify" class="mb-0">Trabalhei com o Guilherme em um projeto importante da empresa, nós éramos responsáveis pelo projeto da Oi. 
-                        Sobre o Guilherme, posso dizer que é um ótimo profissional, ele gosta muito de conversar sobre tecnologias. 
-                        Tem um ótimo entendimento sobre Python e está melhorando cada vez mais em Java. Entende muito bem sobre SQL. 
-                        Sua atuação em equipe é do perfil ideal, sendo sempre solicito e prestativo, vale ressaltar a pró-atividade do Guilherme. 
-                        Ele procura sempre se atualizar tecnicamente e sempre trazendo novas soluções para a equipe.</p>
-                    <footer class="blockquote-footer">Desenvolvedor Java Júnior<cite title="Source Title"> IBM</cite>
-                    </footer>
-                </blockquote>
-                <blockquote class="blockquote text-center">
-                    <p align="justify" class="mb-0">Realizei um projeto com o Guilherme por 1 ano e meio, profissional centrado, proativo, 
-                        me ajudou muito com banco de dados e sempre aprendendo assuntos novos.</p>
-                    <footer class="blockquote-footer">Especialista em Sistemas<cite title="Source Title"> FlyTour</cite>
-                    </footer>
-                </blockquote>
-            </div>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center jumbotron-heading titulosVerdes">
+            Depositions
+          </h2>
+          <blockquote class="blockquote text-center">
+            <p align="justify" class="mb-0">
+              Guilherme is a very talented professional, I had the privilege to
+              work with him at Compuset, always willing and respectful. Has a
+              lot of knowledge in programming and web support, certainly a
+              professional that tends to add up, here's my recommendation.
+            </p>
+            <footer class="blockquote-footer">
+              Senior Support Analyst<cite title="Source Title"> Compuset</cite>
+            </footer>
+          </blockquote>
+          <blockquote class="blockquote text-center">
+            <p align="justify" class="mb-0">
+              I worked with Guilherme on an important project of the company, we
+              were responsible for the Oi project. About Guilherme, I can say
+              that he is a great professional, he really likes to talk about
+              technologies. Has a great understanding of Python and is getting
+              better and better in Java. You understand SQL very well. His team
+              work is of the ideal profile, always being prompt and helpful, it
+              is worth mentioning Guilherme's proactivity. He always seeks to
+              update himself technically and always bringing new solutions to
+              the team.
+            </p>
+            <footer class="blockquote-footer">
+              Junior Java Developer<cite title="Source Title"> IBM</cite>
+            </footer>
+          </blockquote>
+          <blockquote class="blockquote text-center">
+            <p align="justify" class="mb-0">
+              I carried out a project with Guilherme for 1 year and a half,
+              focused professional, proactive, helped me a lot with database and
+              always learning new subjects.
+            </p>
+            <footer class="blockquote-footer">
+              Systems Specialist<cite title="Source Title"> FlyTour</cite>
+            </footer>
+          </blockquote>
         </div>
+      </div>
     </section>
 
     <section Id="contato" class="corPrimaria">
-        <div class="corPrimaria">
-            <div class="container-fluid">
-                <h3 style="padding-top:90px;" class="text-center titulosBrancos">Para mais informações</h3>
-                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center">
-                    <a href="#">Celular - (11) 97614-4616 - Claro</a>👈<br>
-                    <a href="#">E-mail - guilhermevm99@gmail.com👈</a><br>
-                    <a href="#">GitHub - https://github.com/Vilela272</a>👈<br>
-                    <a href="#">Telefone Residencial - (11) 5611-4384 - Residencial</a>👈<br>
-                    <a href="#">LinkedIn - https://www.linkedin.com/in/guilherme-vilela-moreira-81426b150/</a>👈</h4>
-            </div>
+      <div class="corPrimaria">
+        <div class="container-fluid">
+          <h3 style="padding-top: 90px;" class="text-center titulosBrancos">
+            Contacts
+          </h3>
+          <h4
+            style="padding-bottom: 90px; margin-bottom: 0px; color: white;"
+            class="text-center"
+          >
+            <a href="#">Celular - (11) 97614-4616 - Claro</a>👈<br />
+            <a href="#">E-mail - guilhermevm99@gmail.com👈</a><br />
+            <a href="#">GitHub - https://github.com/Vilela272</a>👈<br />
+            <a href="#">Telefone Residencial - (11) 5611-4384 - Residencial</a
+            >👈<br />
+            <a href="#"
+              >LinkedIn -
+              https://www.linkedin.com/in/guilherme-vilela-moreira-81426b150/</a
+            >👈
+          </h4>
         </div>
+      </div>
     </section>
 
-    <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
-        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2020 Guilherme Vilela Moreira®
-        </p>
+    <footer
+      class="text-center"
+      style="background-color: #2c3e50; padding: 0px; margin: 0px;"
+    >
+      <p
+        style="
+          margin: 0px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: white !important;
+        "
+      >
+        Copyright 2020 Guilherme Vilela Moreira®
+      </p>
     </footer>
-
-</body>
-
+  </body>
 </html>
